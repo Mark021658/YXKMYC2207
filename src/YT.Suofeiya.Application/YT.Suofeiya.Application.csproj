@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <TargetFramework>net472</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>YT.Suofeiya.Application</AssemblyName>
+    <PackageId>YT.Suofeiya.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>YT.Suofeiya</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Abp.Beifu\Abp.Beifu.csproj" />
+    <ProjectReference Include="..\Abp.Modbus\Abp.Modbus.csproj" />
+    <ProjectReference Include="..\YT.Suofeiya.Core\YT.Suofeiya.Core.csproj" />
+    <ProjectReference Include="..\YT.Suofeiya.EntityFrameworkCore\YT.Suofeiya.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore" Version="4.9.0" />
+    <PackageReference Include="Abp.AutoMapper" Version="4.9.0" />
+	<PackageReference Include="Abp.Quartz" Version="4.9.0" />
+  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="Microsoft.CSharp" />
+	</ItemGroup>
+</Project>
